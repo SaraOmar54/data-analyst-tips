@@ -1,74 +1,113 @@
-/* Resetting some default margin and padding */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General page styling */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;  /* Add a smooth font */
+    background-color: #f7f7f7;  /* Light background for better contrast */
+    color: #333;  /* Dark gray for text */
     line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-/* Styling the header */
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
+    max-width: 1200px;  /* Limit the width of the content */
+    margin: 0 auto;
     padding: 20px;
-    font-size: 2em;
+}
+
+/* Header Styling */
+header {
+    background-color: #008C76;  /* Elegant dark green */
+    color: #ffffff;  /* White text */
+    text-align: center;
+    padding: 40px 0;  /* More padding for a bigger header */
+    font-size: 2.5rem;
     font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
 }
 
-/* Styling the main content area */
+/* Main Content Area */
 main {
-    margin: 20px;
+    margin-top: 30px;  /* Space from header */
 }
 
-/* Styling the section for tips */
+/* Section Styling */
+section {
+    margin-bottom: 40px;  /* Space between sections */
+}
+
+/* Section Header Styling */
 section h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    font-size: 2rem;  /* Larger heading */
     color: #333;
+    margin-bottom: 15px;
+    text-transform: capitalize;
 }
 
-/* Styling the list of tips */
+/* Styling for the Tips List */
 ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none;  /* Removing default bullets */
 }
 
 ul li {
-    background-color: #ffffff;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    background-color: #ffffff;  /* White cards */
+    margin-bottom: 20px;  /* Space between tips */
+    padding: 20px;
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);  /* Soft shadow for depth */
+    transition: all 0.3s ease;  /* Smooth hover transition */
 }
 
 ul li:hover {
-    background-color: #f1f1f1;
-    transform: translateY(-5px);
+    transform: translateY(-5px);  /* Card lifts slightly on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);  /* Stronger shadow on hover */
 }
 
-/* Styling the footer */
+/* Footer Styling */
 footer {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
+    background-color: #008C76;  /* Matching the header's color */
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    font-size: 0.9em;
-    margin-top: 20px;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    border-radius: 5px 5px 0 0;  /* Rounded corners at the top of footer */
 }
 
+/* Link Styling in Footer */
 footer a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;  /* Less padding on small screens */
+    }
+
+    header {
+        font-size: 2rem;
+        padding: 30px 0;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    ul li {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
 }
