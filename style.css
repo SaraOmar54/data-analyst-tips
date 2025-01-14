@@ -66,8 +66,8 @@ footer {
 }
 
 footer a {
-    color: white;
-    text-decoration: none;
+    color: orange;
+    text-decoration: bold;
 }
 
 footer a:hover {
